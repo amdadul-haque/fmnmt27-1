@@ -20,12 +20,23 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  /* height: 100%; */
   display: flex;
   align-items: center;
   background: url(./img/right-bottom.png) right bottom no-repeat, url(./img/left-top.png) left top no-repeat, var(--bg);
   font-family: 'myfont';
 }
 
+
+.logo{
+  height: 250px;
+}
+
+@media only screen and (max-width: 600px){
+	.logo{
+    height: 150px;
+  }
+}
 
 
 .logo-container {
@@ -58,5 +69,5 @@ body {
 }
 
 .top-btn {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
