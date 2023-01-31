@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'myfont';
+  src: url(myfont.woff);
+}
+
+:root {
+  --hover: #958c5f;
+  --bg: #0C2C1C;
+  --main-color: #bca573;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./img/right-bottom.png) right bottom no-repeat, url(./img/left-top.png) left top no-repeat, var(--bg);
+  font-family: 'myfont';
+}
+
+
+
+.logo-container {
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+
+.btn {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.top-btn {
+  margin-top: 0;
+}
